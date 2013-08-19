@@ -692,10 +692,13 @@ device_parsers:
   #########
   - regex: 'Android[\- ][\d]+\.[\d]+; [A-Za-z]{2}\-[A-Za-z]{2}; WOWMobile (.+) Build'
   - regex: 'Android[\- ][\d]+\.[\d]+\-update1; [A-Za-z]{2}\-[A-Za-z]{2}; (.+) Build'
+  - regex: 'Android[\- ]android[\d]+\.[\d]+\-[\d]+\.[\d]+.[\d]+; (.+) Build'                      # android2.1-1.0.1
   - regex: 'Android[\- ][\d]+\.[\d]+\.[\d]+; [A-Za-z]{2}\-[A-Za-z]{2}; (.+) Build'
+  - regex: 'Android[\- ][\d]+\.[\d]+\.[\d]+[A-Za-z0-9]{3}; (.+) Build'                      # Android 2.3.6JW4 Android2.3.6JVU
   - regex: 'Android[\- ][\d]+\.[\d]+\.[\d]+;[A-Za-z]{2}\-[A-Za-z]{2};(.+) Build'
   - regex: 'Android[\- ][\d]+\.[\d]+; [A-Za-z]{2}\-[A-Za-z]{2}; (.+) Build'
   - regex: 'Android[\- ][\d]+\.[\d]+\.[\d]+; (.+) Build'
+  - regex: 'Android[\- ][\d]+\.[\d]+\.[\d]+; (.+) MIUI'                                       # Android with MIUI instead of Build
   - regex: 'Android[\- ][\d]+\.[\d]+; (.+) Build'
 
   ##########
